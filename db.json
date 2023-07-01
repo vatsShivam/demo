@@ -1,14 +1,110 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
+    "nodes": [
+      {
+        "id": "http-trigger",
+        "type": "input",
+        "data": {
+          "label": "http-trigger"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "signup-page",
+        "type": "input",
+        "data": {
+          "label": "signup-page"
+        },
+        "position": {
+          "x": 0,
+          "y": 100
+        }
+      },
+      {
+        "id": "redirect-url",
+        "type": "input",
+        "data": {
+          "label": "redirect-url"
+        },
+        "position": {
+          "x": 0,
+          "y": 200
+        }
+      }
+    ],
+    "formConfiguration": {
+      "signup-page": [
+        {
+          "type": "input",
+          "title": "Page Title",
+          "placeholder": "page title",
+          "name": "page-title"
+        },
+        {
+          "type": "input",
+          "title": "Subheading",
+          "placeholder": "subheading",
+          "name": "subheading"
+        },
+        {
+          "type": "input",
+          "title": "Email Input Label",
+          "placeholder": "input title",
+          "name": "input-title"
+        },
+        {
+          "type": "input",
+          "title": "Email Input Placeholder",
+          "placeholder": "placeholder text",
+          "name": "email-input"
+        },
+        {
+          "type": "input",
+          "title": "Submit Button Text",
+          "placeholder": "submit btn CTA",
+          "name": "btn-cta"
+        }
+      ],
+      "http-trigger": [
+        {
+          "type": "input",
+          "title": "sandboxUrl",
+          "placeholder": "sandboxUrl",
+          "name": "sandboxurl"
+        }
+      ],
+      "redirect-url": [
+        {
+          "type": "input",
+          "title": "redirectUrl",
+          "placeholder": "redirectUrl",
+          "name": "redirecturl"
+        }
+      ]
+    },
+    "formData": [
+      {
+        "id": "http-trigger",
+        "sandboxurl": "",
+        "isSubmitted": false
+      },
+      {
+        
+        "id": "redirect-url",
+        "isSubmitted": false,
+        "redirecturl":""
+  
+      },
+      {
+        "id": "signup-page",
+        "page-title": "",
+        "subheading": "",
+        "input-title": "",
+        "email-input": "",
+        "btn-cta": "",
+        "isSubmitted": false
+      }
+    ]
   }
-}
